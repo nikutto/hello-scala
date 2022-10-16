@@ -1,5 +1,10 @@
 @main def hello: Unit = 
-  println("Hello world!")
-  println(msg)
+  println("Hello. What's your name?")
+  print("Your name: ")
+  val name = io.StdIn.readLine()
+  println(s"Welcome, $name.")
 
-def msg = "I was compiled by Scala 3. :)"
+  println("We'll echo your input. If you want to end, send EOF signal.")
+  for (line <- io.Source.stdin.getLines()) println(line)
+  
+  println("Bye!")
