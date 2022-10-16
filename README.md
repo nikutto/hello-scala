@@ -14,3 +14,13 @@ Use following command.
 $ sbt
 sbt:hello-scala> run
 ```
+
+### How to test
+
+```
+sbt:hello-scala> test
+```
+Also, the following command run test with hot reloads.
+```
+sbt:hello-scala> ~test
+```
