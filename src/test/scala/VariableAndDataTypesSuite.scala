@@ -32,10 +32,9 @@ class VariableAndDataTypesSuite extends munit.FunSuite {
         assertEquals(s"${2+3}", "5")
     }
 
-    test("Multiline strings") {
+    test("multiline strings") {
         val quote: String = """This is Tom.
                             |Hello world!""".stripMargin
-        println(quote)
         val expected = "This is Tom.\nHello world!"
         assertEquals(quote, expected)
     }
