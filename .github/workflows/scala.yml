@@ -29,6 +29,8 @@ jobs:
         cache: 'sbt'
     - name: Check format
       run: sbt scalafmtCheckAll
+    - name: Run lint
+      run: sbt 'scalafixAll --check'
     - name: Run tests
       run: sbt test
-
+    
