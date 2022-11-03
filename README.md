@@ -46,7 +46,7 @@ Also, the following command run test with hot reloads.
 sbt:hello-scala> ~test
 ```
 
-### How to format
+### How to run statis analysis
 
 Format
 ```
@@ -55,9 +55,18 @@ sbt:hello-scala> test:scalafmt
 sbt:hello-scala> scalafmtAll
 ```
 
-Check
+Check format
 ```
 sbt:hello-scala> scalafmtCheck
 sbt:hello-scala> scalafmtCheckAll
 ```
 
+Lint
+```
+sbt:hello-scala> scalafixAll
+```
+
+Check lint
+```
+sbt:hello-scala> scalafixAll --check
+```
